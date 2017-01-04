@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.7
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url "http://m2.neo4j.org/" }
+    maven { url "http://repo.maven.apache.org/maven2" }
+    maven { url "home/alexandr/.m2/repository" }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'log4j:apache-log4j-extras:1.0'
+}
