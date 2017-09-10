@@ -1,0 +1,2 @@
+
+(Spring bean custom scope) https://habrahabr.ru/post/225397/

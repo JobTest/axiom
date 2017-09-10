@@ -1,0 +1,23 @@
+
+*** (Как ведет себя static метод в многопоточном приложении) http://ru.stackoverflow.com/questions/19452/Как-ведет-себя-static-метод-в-многопоточном-приложении
+***                                  (Синхронизация потоков) http://www.skipy.ru/technics/synchronization.html
+
+(jax-ws сервис)
+(JAX-WS-HelloWorld.zip) http://examples.javacodegeeks.com/enterprise-java/jws/jax-ws-hello-world-example-rpc-style/
+                        http://anton.troshin.name/?p=1352
+                        https://www.genuitec.com/products/myeclipse/learning-center/ws/jax-ws-web-services-clients-tutorial/
+                        http://tomee.apache.org/examples-trunk/simple-webservice/README.html
+                        http://vavakumov.blogspot.com/2013/03/jax-ws.html
+                        https://habrahabr.ru/post/220387/
+                        https://habrahabr.ru/post/140181/
+                        http://habrahabr.ru/post/115718/
+
+(java google docs api example)
+https://docs.newrelic.com/docs/agents/java-agent/custom-instrumentation/java-agent-api-example-program
+http://www.programmableweb.com/api/google-spreadsheets
+https://xakep.ru/2015/01/08/google-apps-script/
+http://findevelop.blogspot.com/2012/05/google-spreadsheet.html
+https://github.com/mendhak/googledocs-upload-sample
+https://developers.google.com/gdata/samples
+http://stackoverflow.com/questions/15938514/java-and-google-spreadsheets-api-authorization-with-oauth-2-0
+https://templth.wordpress.com/2014/11/19/interacting-with-google-spreadsheet-with-java/

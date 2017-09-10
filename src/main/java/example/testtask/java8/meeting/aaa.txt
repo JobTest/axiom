@@ -1,0 +1,78 @@
+/**
+ * (REST-сервис на Java — это просто) http://habrahabr.ru/post/115718/
+ */
+
+public class App { 
+    // 2. Опишем сервис, который будет возращать нам что-то, попутно дергая counter:
+    @Path("/hello") 
+    public static class Resource { 
+        @Inject Counter counter; 
+        @GET public String get() { 
+            return "Hello, User number " + counter.getNext(); 
+        } 
+    } 
+
+    // 1. Опишем простенький класс, который будет предоставлять доступ к некоторой информации. Пусть это будет счетчик вызовов:
+    @Singleton 
+    public static class Counter { 
+        private final AtomicInteger counter = new AtomicInteger(0); 
+        public int getNext() { 
+            return counter.incrementAndGet(); 
+        } 
+    } 
+
+    // 3. Теперь подружим Jersey и Guice. Я воспользовался готовой интеграцией, она называется jersey-guice.
+    //    Интеграция осуществляется через сервлет/фильтр GuiceContainer, для использования которого нужно объявить ServletModule из расширения guice-servlet-module и указать, что нужные нам запросы будут обрабатываться GuiceContainer, что позволит объявлять Jersey ресурсы в контексте Guice.
+    public static class Config extends GuiceServletContextListener { 
+        @Override 
+        protected Injector getInjector() { 
+            return Guice.createInjector(new ServletModule(){ 
+                @Override 
+                protected void configureServlets() { 
+                    bind(Resource.class); 
+                    bind(Counter.class); 
+                    serve("*").with(GuiceContainer.class); 
+                } 
+            }); 
+        } 
+    } 
+
+    @SuppressWarnings("serial") 
+    public static class DummySevlet extends HttpServlet {} 
+
+    // 4. Осталось запустить все это добро, используя сервлет-контейнер.
+    //    Для этого нам совершенно не обязательно собирать war-ку и деплоить в какой-нибудь Tomcat.
+    //    Можно воспользоваться встраиваемым контейнером. На ум приходят Jetty и Grizzly.
+    public static void main(String[] args) throws Exception { 
+        int                port = Integer.valueOf(System.getProperty("port")); 
+        GrizzlyWebServer server = new GrizzlyWebServer(port); 
+        ServletAdapter  adapter = new ServletAdapter(new DummySevlet()); 
+
+        adapter.addServletListener(Config.class.getName()); 
+        adapter.addFilter(new GuiceFilter(), "GuiceFilter", null); 
+        server.addGrizzlyAdapter(adapter, new String[]{ "/" }); 
+
+        server.start(); 
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

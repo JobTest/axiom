@@ -1,0 +1,149 @@
+
+                     Саша Кмец
+Region of residence: Kharkov
+             Mobile: +380639237502
+             E-mail: sashakmets@yandex.ru
+              Skype: sashakmets
+
+[ rabota.ua|Work.ua ]-----------------------------------------------------------------------------------------------------------------[ 12.01.2016 ]
+? (Senior or Middle+ Java developer >> Videal) http://rabota.ua/company1006314/vacancy5956429
+  Харьков | Ирина | 050 400 18 17
+
+? (Middle Java developer >> Система автоматизации банковской, финансовой и страховой деятельности) http://rabota.ua/company787108/vacancy5628363
+  Харьков | 057 760-13-67
+
+? (Middle Java Developer >> MobiDev) http://rabota.ua/company960633/vacancy5950604
+  Харьков | Алена | 050-301-44-39
+
+? (Java developer >> Gameloft) http://rabota.ua/company522648/vacancy5720527
+  Харьков | Tatyana Ivanova | (057)766-07-13
+
+? (Middle Java Developer >> Akvelon) http://rabota.ua/company461331/vacancy5443443
+  Харьков | Наталья | 0675779037
+
+? (Java Developer >> NIX Solutions ltd) http://rabota.ua/company53660/vacancy5058046
+  Харьков | Мария | 067 575 23 06
+
+? (Middle Java Developer >> AXIOMSL) http://www.work.ua/jobs/1948738/?utm_source=job.ukr.net&utm_medium=cpc&utm_campaign=jobs_kiev_other_premium&utm_content=1948738
+  Харьков
+
+? (Middle Java Developer >> Rozdoum/Gentleware Ukraine) http://www.trud.ua/jobs/871275.html
+  Харьков |
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+наследование, полиморфизм, инкапсуляция
+
+Parent
+  void f1(){}
+  private void f2(){}
+  public void f3(){}
+
+
+Chield extends Parent
+  public void f1(){}
+  public void f2(){}
+  protected void f3(){}
+
+P p = new Chield
+p.f1
+p.f2
+p.f3
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; отсортировать элементы в массиве
+int[] a = {,,,,,};
+
+int[] fSort(int[] x) {
+  for(int i=x.lenght; 0<i; i--){
+    for(int j=0; j<i; j++){
+      if(x[i]>x[j]){
+        int t = x[i]; //
+        x[i] = x[j];
+        x[j] = t;
+      }
+  }
+  return x;
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; synchronized
+можно ли синхронизировать два методв в одном классе (если это объект, если это статический класс)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; исключения
+когда запретить передачу ексепшинов - в try/catch...
+если catch бросить ексепшин и в finaly бросить ексепшин - какой вызовится = только в catch
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; веб-сервисы
+в Spring как работают скоупы (prototype - по умолчанию, singleton - управляет жизн.цыклом объектов внутри Spring, ...)
+session скоупы для веб-сервиса
+ajax: как из json сделать сабмит
+сервлет service|doGET|doPOST|doPUT|doDELETE, (перенаправление в сервлете???)
+для JSP как сделать коунтер без сессии (там есть какие-то скоупы...)
+какие бывают веб-сервисы (SOAP,REST)
+что такое SOAP
+какие там есть классы два основных WSDL, создание сервиса, класс-интерфейс
+какие там есть библиотеки, классы...
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; AOP
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; сообщения (JML...)
+ActiveMQ: очередь (есть подписчики) и топ
+что присходит с топ-ом (если нет подписчиков)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; SQL
+напсать запрос для получения всех писателей у которых нет книг:
+	writers(id,name)
+	books(id,name)
+	writers_books(wr_id,bk_id)
+	SELECT writers.name FROM writers JOIN writers_books JOIN books ON writers_books.bk_id = writers.id WHERE
+можно @Transaction вызывать изнутри метода в этом-же бине (в этом-же бине - НЕТ, в другом - ДА)
+Criteria написать запрос с несколькими JOIN
+Spring @Transaction  не на 1-метод (а глобальный...) - есть именнованные запросы
+написать запрос с JOIN на JPQL
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(Разработка и тестирование Java REST веб-сервисов) http://atamanenko.blogspot.com/2012/02/java-rest.html
+http://habrahabr.ru/post/150176/
+(Вопросы на собеседование) http://jsehelper.blogspot.com/2016/01/java-collections-framework-3.html
+
+
+(java developer киев)
+http://rabota.ua/company935403/vacancy5982901?utm_campaign=free_kiev&utm_source=jobukrnet&utm_medium=cpc
+http://www.work.ua/jobs/2021905/?utm_source=job.ukr.net&utm_medium=cpc&utm_campaign=jobs_kiev_other_premium&utm_content=2021905
+http://www.work.ua/jobs/1528603/?utm_source=job.ukr.net&utm_medium=cpc&utm_campaign=jobs_kiev_premium&utm_content=1528603
+https://kiev.hh.ua/vacancy/15602907?utm_source=jobukrnet&utm_medium=meta&utm_campaign=protege
+http://rabota.ua/company209907/vacancy5987401?utm_campaign=paid_kiev&utm_source=jobukrnet&utm_medium=cpc
+http://www.work.ua/jobs/2038422/?utm_source=job.ukr.net&utm_medium=cpc&utm_campaign=jobs_kiev_premium&utm_content=2038422
+
+http://rabota.ua/company3273780/vacancy5987395?utm_campaign=free_kiev&utm_source=jobukrnet&utm_medium=cpc
+
+https://www.luxoft.ru/job-opportunities/index.php?_r=991&arrFilter_ff[NAME]=&arrFilter_pf[cities]=11&arrFilter_pf[categories]=95&set_filter=Y&PAGEN_5=3
+https://www.luxoft.ru/careers/66957/middle-java-developer/
+http://rabota.ua/zapros/junior-java-developer/киев
+http://rabota.ua/company911/vacancy5977759
+http://rabota.ua/company2597090/vacancy5997264
+http://dou.ua/lenta/articles/it-market-mykolayiv/
+http://sintez.com/contacts
+http://jobs.dou.ua/companies/sintez-technologies/offices/
+http://dou.ua/users/marina-zheleva-1/
+http://ua.jooble.org/работа-java-architect/Николаев?p=5
+http://rabotaplus.ua/vacancy/id/2731500?utm_source=jooble&utm_medium=cpc&utm_campaign=jooble
+http://rabota.ua/company526451/vacancy5999140?utm_source=trudcom&utm_medium=cpc&utm_campaign=it
+
+(jax-ws сервис)
+http://www.mkyong.com/tutorials/jax-ws-tutorials/
+http://www.mkyong.com/webservices/jax-ws/jax-ws-hello-world-example/
+http://dev-blogs.com/web-service-jax-ws/
+http://habrahabr.ru/post/220387/
+
+* http://olx.ua/transport/legkovye-avtomobili/dnepropetrovsk/?page=5
+** http://olx.ua/transport/legkovye-avtomobili/hyundai/?search[order]=filter_float_price%3Aasc&page=5
+*** http://olx.ua/obyavlenie/srochnaya-prodazha-posle-dtp-IDhcFB8.html#1d3deb0be6
+*** http://olx.ua/obyavlenie/hyundai-elantra-2013-posle-dtp-IDcYjxx.html#5c6a649ef9
+*** http://olx.ua/obyavlenie/prodam-hyundai-elantra-1995-gaz-benzin-IDhTpOY.html#5c6a649ef9
+*** http://olx.ua/obyavlenie/hyundai-santa-fe-i-2004g-IDhCAYv.html#5c6a649ef9
+
+
