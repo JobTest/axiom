@@ -3,7 +3,7 @@ package example.testtask.cities_roads;
 import java.util.Collection;
 import java.util.List;
 
-public class Service1PerfomanceTest {
+public class ServicePerfomanceTest {
     private static final Runtime s_runtime = Runtime.getRuntime();
     private static long beforeHeap=0, afterHeap=0, startTime=0, finishTime=0, finishTimeTest=0, elapsedTime=0, elapsedTimeTest=0;
     private static final int count = 100;
